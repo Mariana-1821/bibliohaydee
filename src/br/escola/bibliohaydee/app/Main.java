@@ -29,7 +29,7 @@ class Main {
 
         livros.add(livro);
 
-        System.out.println("===== AUTORES =====");
+        System.out.println(" AUTORES ");
 
         for (Autor a : autores) {
             System.out.println(a);
@@ -37,7 +37,7 @@ class Main {
 
         System.out.println();
 
-        System.out.println("===== ACERVO =====");
+        System.out.println(" ACERVO ");
 
         if (livros.isEmpty()) {
             System.out.println("O acervo está vazio.");
