@@ -2,6 +2,7 @@ package br.escola.bibliohaydee.app;
 
 import br.escola.bibliohaydee.model.Autor;
 import br.escola.bibliohaydee.model.Livro;
+import br.escola.bibliohaydee.model.Usuario;
 
 import java.util.ArrayList;
 
