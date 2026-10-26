@@ -52,6 +52,15 @@ public class Usuario {
         return true;
     }
 
+    public boolean setLimiteEmprestimos(int limiteemprestimos) {
+        if (limiteemprestimos < 1) {
+            return false;
+        }
+        this.limiteEmprestimos = limiteemprestimos;
+        return true;
+    }
+
+
     public String getNome() {
         return nome;
     }
