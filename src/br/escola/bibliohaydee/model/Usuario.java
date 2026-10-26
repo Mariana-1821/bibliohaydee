@@ -56,7 +56,7 @@ public class Usuario {
         if (limiteemprestimos < 1) {
             return false;
         }
-        this.limiteEmprestimos = limiteemprestimos;
+        this.limiteEmprestimos = limiteEmprestimos;
         return true;
     }
 
