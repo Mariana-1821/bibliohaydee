@@ -25,6 +25,7 @@ public class Usuario {
             );
         }
 
+
         if (limite < 1) {
             throw new IllegalArgumentException(
                     "O limite deve ser maior que zero."
@@ -39,7 +40,16 @@ public class Usuario {
     }
 
     public Usuario(String nome, String matricula, String tipo) {
+
         this(nome, matricula, tipo, LIMITE_PADRAO);
+    }
+
+    public boolean setNome(String nome) {
+        if (nome == null || nome.trim().isEmpty()) {
+            return false;
+        }
+        this.nome = nome.trim();
+        return true;
     }
 
     public String getNome() {
