@@ -87,4 +87,16 @@ class Main {
 
         scanner.close();
     }
+
+    public static Usuario buscarUsuario(
+            ArrayList<Usuario> usuarios, String matricula) {
+
+        for (Usuario usuario : usuarios) {
+            if (usuario.getMatricula().equals(matricula)) {
+                return usuario;
+            }
+        }
+
+        return null;
+    }
 }
